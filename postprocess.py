@@ -72,7 +72,7 @@ def best_one_sim():
         (60, 70),
     ]
     n_substep = 16
-    storage_name = f'sqlite:///final/sim_12.db'  # the best optimization among 15 repetitions
+    storage_name = f'sqlite:///result/sim_12.db'  # the best optimization among 15 repetitions
     study = optuna.load_study(study_name=study_name, storage=storage_name)
     with open('processed_data/sim_dict.pkl', 'rb') as f:
         data_dict = pickle.load(f)
@@ -98,7 +98,7 @@ def best_one_exp():
     ]
     n_substep = 16
     n_timestep = 30
-    storage_name = f'sqlite:///final/exp_05.db'  # the best optimization among 15 repetitions
+    storage_name = f'sqlite:///result/exp_05.db'  # the best optimization among 15 repetitions
     study = optuna.load_study(study_name=study_name, storage=storage_name)
     with open('caw_dict.pkl', 'rb') as f:
         coef_dict = pickle.load(f)
@@ -124,7 +124,7 @@ def sim_noprune():
         reason = []
         points_list=[]
         n_points=0
-        storage_name = f'sqlite:///final_processed/sim_noprune_{i_study:02d}.db' # TODO: name change
+        storage_name = f'sqlite:///result/sim_noprune_{i_study:02d}.db'
         study = optuna.load_study(study_name=study_name, storage=storage_name)
         for trial in study.trials:
 

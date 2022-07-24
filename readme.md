@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This folder contains the code and data for following paper
+This folder contains the code and data for following paper:
 
 Changyu Deng, Andrew Kim, and Wei Lu. "A generic battery-cycling optimization framework with learned sampling and early stopping strategies." Patterns (2022): 100531. [Website](https://www.sciencedirect.com/science/article/pii/S2666389922001283) [PDF](https://www.sciencedirect.com/sdfe/reader/pii/S2666389922001283/pdf)
 
